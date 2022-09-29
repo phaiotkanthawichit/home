@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../widget/navigator_layout.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -13,10 +15,12 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ScreenTypeLayout(
-        desktop: Text('This is Home type Desktop'),
+        desktop: buildDesktop(),
         tablet: Text('This is Home type Tablet'),
         mobile: Text('This is Home type Mobile'),
       ),
     );
   }
+
+  Widget buildDesktop() => Navigrator();
 }
