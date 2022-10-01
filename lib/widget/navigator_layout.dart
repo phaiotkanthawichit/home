@@ -5,8 +5,15 @@ class Navigrator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.pink.shade100,
-      child: Text('Navigrator'),
+    return Container(
+      height: 100,
+      color: Colors.pink.shade100,
+      child: Row(
+        children: [
+          Text('Navigrator'),
+          TextButton(onPressed: () {}, child: Text('Menu'))
+        ],
+      ),
     );
   }
 }
