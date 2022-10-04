@@ -5,10 +5,10 @@ class Content extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      //width: 600,
-      color: Colors.green.shade100,
-      child: Text('Content Layout'),
+    return Container(
+      width: 500,
+      color: Colors.green.shade200,
+      child: Center(child: Text('Content Layout')),
     );
   }
 }

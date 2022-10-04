@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-
-class Action extends StatelessWidget {
-  const Action({super.key});
+class MyAction extends StatelessWidget {
+  const MyAction({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(color: Colors.purple.shade100,
-        child: Text('call to action'),
-      ),
-    );
+    return Container(
+      // width: 600,
+      color: Colors.purple.shade100,
+      child: Center(
+      child: Expanded(child: Text('call to action')),
+    ),
+     ) ;
   }
 }
+
